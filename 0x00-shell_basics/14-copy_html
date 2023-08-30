@@ -1,10 +1,2 @@
 #!/bin/bash
-for f in *.html
- parent_file="../$f" 
- if[! -e "$parent_file"]
-   if["$f" -nt "$parenT-file"]
-     then
-     cp"$f" "../$f"
-fi
-
-done
+for f in *.html|parent_file="../$f"|if[! -e "$parent_file"]|if["$f" -nt "$parenT-file"]|then|cp"$f" "../$f"|fi|done
